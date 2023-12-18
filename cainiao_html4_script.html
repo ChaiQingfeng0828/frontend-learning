@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>小菜鸟</title>
+        <script>
+            document.createElement("myHero")
+        </script>
+        <style>
+            myHero {
+                display: block;
+                background-color: #ddd;
+                padding: 50px;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <script>
+            document.write("Hello World!")
+            document.write("<iframe src=\"cainiao_html2_layout.html\" width=\"600px\" height=\"500px\" frameborder=\"0\"></iframe>")
+
+
+        </script>
+        <h1>第一个javascript a&#771</h1>
+        <p id="demo">xxxxx</p>
+        <button type="button" onclick="myFunction()">变字</button>
+        <button type="button" onclick="changeColor()">变色</button>
+        <script>
+            var flag = true;
+            var flag2 = true;
+            function myFunction() {
+                x = document.getElementById("demo")
+                if (flag) {
+                    x.innerHTML="Hello javascript";
+                } else {
+                    x.innerHTML="get out javascript";
+                }
+                flag = !flag;
+            }
+
+            function changeColor() {
+                x = document.getElementById("demo")
+                if (flag2) {
+                    x.style.color="#ff0000";
+                } else {
+                    x.style.color="#efacde";
+                }
+                flag2 = !flag2;
+            }
+        </script>
+
+        <myHero>我的第一个元素</myHero>
+    </body>
+</html>

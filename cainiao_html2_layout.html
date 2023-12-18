@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>布局</title>
+    </head>
+    <body>
+        <div id="container" style="width: 500px;">
+
+            <div id="header" style="background-color: #FFA500;">
+                <h1 style="margin-bottom: 0;">主要的网页标题</h1>
+            </div>
+
+            <div id="menu" style="background-color: #FFD700;height: 400px;width: 100px;float: left;">
+                <b>菜单</b><br>
+                HTML<br>
+                CSS<br>
+                JavaScript
+            </div>
+
+            <div id="content" style="background-color: #EEEEEE;height: 400px;width: 400px;float: right;">
+                <form action="/" method="post">
+                    <label for="name">用户名：</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="password">密码：</label>
+                    <input type="password" id="password" name="password" required><br>
+
+                    <label>性别：</label>
+                    <input type="radio" id="male" name="gender" value="male" checked>
+                    <label for="male">男</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">女</label><br>
+
+                    <input type="checkbox" id="subscribe" name="subscribe" checked>
+                    <label for="subscribe">订阅推送信息</label><br>
+
+                    <label for="country">国家：</label>
+                    <select id="country" name="country">
+                        <option value="cn">中国</option>
+                        <option value="usa">美国</option>
+                        <option value="uk">英国</option>
+                    </select>
+
+                    <input type="submit" value="提交">
+                </form>
+
+                <!-- 以下表单使用 GET 请求发送数据到当前的 URL，method 默认位 GET。 -->
+                <form>
+                    <label>Name:<input name="submitted-name" autocomplete="name"></label>
+                    <button>Save</button>
+                </form>
+
+                <form method="post">
+                    <label>Name:<input name="submitted-name" autocomplete="name">
+                    </label>
+                    <button>Save</button>
+                </form>
+
+                <form method="post">
+                    <fieldset>
+                        <legend>Title</legend>
+                        <label><input type="radio" name="radio">Select me</label>
+                        
+                    </fieldset>
+                    <button>Save</button>
+                </form>
+            </div>
+
+            <div id="footer" style="background-color: #FFA500;clear:both;text-align: center;">
+            版权 ©CCCC
+            </div>
+        </div>
+    </body>
+</html>
